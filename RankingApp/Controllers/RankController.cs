@@ -7,7 +7,7 @@ namespace RankingApp.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ItemController : ControllerBase
+    public class RankController : ControllerBase
     {
         private static readonly IEnumerable<ItemModel> Items = new[]
         {
@@ -27,12 +27,6 @@ namespace RankingApp.Controllers
         public IEnumerable<ItemModel> GetAllItems()
         {
             return Items;
-        }
-
-        [HttpGet("{itemType:int}")]
-        public IEnumerable<ItemModel> GetItemsByType(int itemType)
-        {
-            return Items.Where(i => i.ItemType == itemType);
         }
     }
 }
