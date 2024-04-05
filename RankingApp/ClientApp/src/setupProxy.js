@@ -6,7 +6,8 @@ const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_H
 
 const context = [
   "/rank",
-  "/api/product"
+  "/api/product",
+  "/list"
 ];
 
 const onError = (err, req, resp, target) => {

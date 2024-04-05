@@ -11,6 +11,23 @@ if (!app.Environment.IsDevelopment())
 {
 }
 
+
+void ConfigureServices(IServiceCollection services)
+{
+    services.AddCors(options =>
+    {
+        options.AddPolicy("AllowAll",
+            builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            });
+    });
+
+    // Other configurations...
+}
+
 app.UseStaticFiles();
 app.UseRouting();
 

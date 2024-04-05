@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{B9A27A84-1085-408A-98DC-E6646C959663}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.RankingApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RankingApp/Controllers/RankController.cs">
+    <Files>
+      <File FileName="RankingApp/Controllers/ProductController.cs" />
+      <File FileName="RankingApp/Controllers/RankController.cs" Line="19" Column="32" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RankingApp">
+            <Node name="RankingApp" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="RankController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

@@ -9,7 +9,7 @@ namespace RankingApp.Controllers
     [Route("[controller]")]
     public class RankController : ControllerBase
     {
-        private static readonly IEnumerable<ItemModel> Items = new[]
+        private static List<ItemModel> Items = new List<ItemModel>
         {
             new ItemModel{Id =1, Title = "Omar Sharif", Ranking=2, ItemType=0 },
             new ItemModel{Id =2, Title = "Adel Imam", Ranking=1, ItemType=2 },
@@ -27,6 +27,19 @@ namespace RankingApp.Controllers
         public IEnumerable<ItemModel> GetAllItems()
         {
             return Items;
+        }
+
+        [HttpPost]
+        public IActionResult AddItem(ItemModel item)
+        {
+            // Assign a new ID to the item
+            item.Id = Items.Count + 1;
+
+            // Add the item to the list
+            Items.Add(item);
+
+            // Return 201 Created status code along with the added item
+            return CreatedAtAction(nameof(GetAllItems), item);
         }
     }
 }

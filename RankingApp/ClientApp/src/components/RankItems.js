@@ -17,7 +17,7 @@ const RankItems = () => {
 
         // Select the first item from the fetched data and set it in state
         if (data.length > 0) {
-          setSelectedFirstItem(data[7]); // You can change this to select any specific item initially
+          setSelectedFirstItem(data[1]); // You can change this to select any specific item initially
         }
       } catch (error) {
         console.error('Error fetching items:', error);

@@ -41,6 +41,9 @@ export class NavMenu extends Component {
               <NavItem>
                 <NavLink tag={Link} className="text-dark" to="/focus-input">rank items</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink tag={Link} className="text-dark" to="/list">rank items</NavLink>
+              </NavItem>
             </ul>
           </Collapse>
         </Navbar>
