@@ -32,13 +32,10 @@ namespace RankingApp.Controllers
         [HttpPost]
         public IActionResult AddItem(ItemModel item)
         {
-            // Assign a new ID to the item
             item.Id = Items.Count + 1;
 
-            // Add the item to the list
             Items.Add(item);
 
-            // Return 201 Created status code along with the added item
             return CreatedAtAction(nameof(GetAllItems), item);
         }
     }
